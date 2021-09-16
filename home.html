@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Glory:ital,wght@0,100;0,200;1,100&family=Lacquer&family=Miltonian+Tattoo&family=Sofadi+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Glory:ital,wght@0,100;0,200;1,100&family=Lacquer&family=Miltonian+Tattoo&family=Raleway&family=Sofadi+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Glory:ital,wght@0,100;0,200;1,100&family=Grandstander&family=Lacquer&family=Miltonian+Tattoo&family=Raleway&family=Sofadi+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link href="main.css" rel="stylesheet">
+
+
+    <title>AGCraft</title>
+</head>
+
+<body>
+    
+    <!--Navigator Menu-->
+<div id="homepage" class="navbar-fixed scrollspy">    
+<nav class="green accent-2 black-text">
+    <div class="container">
+        <div class="nav-wrapper">
+        <a  href="#homepage" class="brand-logo brown-text lighten-2 col s12 l1 left">AGcraft</a>
+        <a href="#" data-target="sidenavhome" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="hide-on-med-and-down right">
+                <li ><b><a href="#guitarhistory" class="brown-text">About</a></b></li>
+                <li><b><a href="#repairrelative" class="brown-text">Services</a></b></li>
+                <li ><b><a class="dropdown-trigger brown-text" href="#" data-target="artistdrop">Artist<i class="material-icons right">arrow_drop_down</i></a></b></li>
+                <li><b><a href="#gallery" class="brown-text">Gallery</a></b></li>
+                <button href="#modallogin" id="loginbutton" class="btn-small modal-trigger waves-effect waves-light brown lighten-2 white-text">Login</button>
+            </ul>
+            <div>
+            </div>   
+        </div>
+
+       
+
+
+                <!--dropdown content-->
+            <div class="row">
+                    <div class="s12">
+                <ul id="artistdrop" class="dropdown-content" >
+                <div id="artistcontainer" class="container center">
+                    
+                    <li><a href="#!" class="center white-text">John Mayer</a></li>
+                    <li class="divider" tabindex=""></li>
+                    <li><a href="#!" class="center white-text">Kent Nishmura</a></li>
+                    <li class="divider" tabindex=""></li>
+                    <li><a href="#1" class="center white-text">Andy Mckee</a></li>
+                    <li class="divider" tabindex=""></li>
+                    <li><a href="#!" class="center white-text">Tommy Emanuel</a></li>
+            </div>
+                </ul>
+                
+                    </div>
+
+                    
+                    
+        <!--end of cointainer NAV bar-->
+</nav>
+    
+</div>
+
+
+
+<!--side nav-->
+
+<ul class="sidenav black darken-3" id="sidenavhome">
+    <li><div class="">
+        <div class="background">
+            <div class="container center">
+            <h4 class="white-text">AGcraft</h4>
+            <div>
+                <li class="divider"></li>
+            </div>
+        </div>
+        </div>
+    </div></li> <!--topendimage-->
+    <br>
+    
+    
+    <div id="sidecollapse" class="container">
+    <ul class="collapsible collapsible-accordion">
+    
+        <li>
+            <div class="waves-effect waves-light collapsible-header white-text"><i class="material-icons green-text accent-2">home</i><a href="#homepage" class="white-text">Home</a></div>
+       </li>
+        <li>
+            <div class="waves-effect waves-light collapsible-header white-text"><i class="material-icons green-text accent-2">adobe</i><a href="#guitarhistory" class="white-text">About</a></div>
+        </li>
+        <li>
+            <div class="waves-effect waves-light collapsible-header white-text"><i class="material-icons green-text accent-2">build</i><a href="#repairrelative" class="white-text">Services</a></div>
+        </li>  
+        <li>
+            <div id="" class="waves-effect waves-light collapsible-header white-text"><i class="material-icons green-text accent-2">adobe</i>Artist<i id="arrowside" class="material-icons green-text accent-2 ">expand_more</i></div>
+            
+            <div id="artistcollapse" class="waves-effect waves-light collapsible-body grey darken-4 center">
+                <a href="#" class="white-text ">John Mayer</a>
+            </div>
+            <div class="waves-effect waves-light collapsible-body grey darken-4 center">
+                <a href="#" class="white-text"  >Kent Nishmura</a>
+            </div>
+            <div class="waves-effect waves-light collapsible-body grey darken-4 center">
+                <a href="#" class="white-text">Andy Mckee</a>
+            </div>
+            <div class="waves-effect waves-light collapsible-body grey darken-4 center">
+                <a href="#" class="white-text">Tommy Emanuel</a>
+            </div>
+        </li>
+        <li>
+            <div class="waves-effect waves-light collapsible-header white-text"><i class="material-icons green-text accent-2">collections</i><a href="#gallery" class="white-text">Gallery</a></div>
+        </li>
+        
+    </ul>
+        
+    </div>
+    
+    </ul><!-- end of artist collapse-->
+
+ 
+
+<!--modal form login Form-->
+
+        <!-- Modal Structure -->
+        
+        <div id="modallogin" class="modal">
+            <div id="modalccc" class="modal-content">
+              <h5 class="center">Login to AGcraft</h5>
+        
+              <div class="row">
+                <form class="col s12">
+                  <div class="row modal-form-row">
+                    <div class="input-field col l12 s12">
+                      <input id="image_url" type="email" class="validate">
+                      <label for="email">email</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="image_title" type="text" class="validate">
+                      <label for="password">password</label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" class="filled-in" checked="checked" />
+                            <span>remember me</span>
+                          </label>
+                    </div>
+                    <a href="#" class="right">forgot password?</a>
+                  </div>       
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <button class="btn waves-effect waves-light right green accent-2 black-text">Login</button>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="col s12">
+
+                         <span>dont have account? <a id="sign" href="signinpage.html">sign-in</a></span></div>
+                  </div>             
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a class=" modal-action modal-close waves-effect waves-green btn-flat">exit</a>
+            </div>
+          </div>
+
+
+
+
+<!--slider homepage-->
+
+<div id="slidebanner" class="slider row">
+    <div class="col s12">
+    <ul class="slides">
+        
+        <li>
+            <img id="slider1" src="img/acoustic8.jpg" alt="" class="responsive-img">
+                <div id="sliderwarp" class="caption center-align">
+                    <h4 class="green-text accent-5"><b>How I do it</b></h4>
+                    <h5>I am dedicated to crafting extraordinary musical
+                        instruments. I continually research the history, mechanics, dynamics and physics of the guitar in order to cultivate a deeper understanding of what makes it work and how I can continue to advance my instruments.</h5>
+                </div>
+            </li>
+    
+        
+                <li>
+                    <img src="img/acoustic9.jpg" alt="" class="responsive-img">
+                        <div class="caption left-align">
+                            <h3 class="green-text accent-5">The ECO Collection</h3>
+                                <h5>The ECO Collection is ushering in a new era in six-string history. With the AGC, for the first time, you can play an environmentally friendly, solid top guitar with vibrant, renewable, sound enhancing EcoTonewood back and sides</h5>
+                        </div>
+                </li>
+                
+                        <li>
+                            <img src="img/acoustic6.jpg" alt="" class="responsive-img">
+                                <div class="caption right-align">
+                                    <h3 class="green-text accent-5">Bespoke.</h3>
+                                        <h5> It’s a word that carries a lot of weight.</h5>
+                                </div>
+                        </li>
+                        
+                                <li>
+                                    <img src="img/guitar7.jpg" alt="" class="responsive-img">
+                                        <div class="caption right-align">
+                                            <h3 class="green-text accent-5">Changing lives with music.</h3>
+                                                <h5 class="brown-text darken-5">“Your music changed my life.”</h5>
+                                        </div>
+                                </li>
+
+
+    </ul>
+</div>
+</div> <!--end of the slider-->
+<br>
+
+<!--John Mayers Paralax-->
+<div class="parallax-container">
+            <div id="paracontainer" class="parallax"><img src="img/guitarpage2.jpg" class="responsive-img">
+               </div class>
+                   <div class="container">
+                       <div class="row">
+                
+                                 <div id="mayersbanner" class="white-text right col l8 s12 m4">
+                                      <p>Mayer uses PRS Super Eagle II models as his main electrics on Dead & Company tours, but beyond gear, the experience of playing Garcia's music has left a huge impression on him, as he explained to Dean Delray…</p>
+                                 </div>                        
+                        <div class="col l9 s10 m12">
+                    <a href="#modaljohn" id="mayersyt" class="btn waves-effect waves-light green accent-3 black-text darken-5 right modal-trigger">Watch on Youtube</a>
+                        </div>
+                
+                    <!-- Modal Structure -->
+  <div id="modaljohn" class="modal black">
+    <div class="modal-content">
+      
+      <div class="video-container">
+ <iframe width="1102" height="400" src="https://www.youtube.com/embed/EQHZESbm9R8" frameborder="0" allowfullscreen gesture="media" allow="autoplay; encrypted-media"></iframe>
+ </div>
+    </div>
+    <div class="modal-footer black">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat white-text">Close</a>
+    </div>
+   </div>
+                </div>   
+            </div>
+        </div> 
+    </div>  <!--end of the parallax-->
+
+<!--About Us-->
+<div id="guitarhistory" class="grey lighten-3 aboutus scrollspy">
+    <h3 class="brown-text darken-5 section center">About Us</h3>
+        <h4 class="brown-text center">SOUND BETTER. PLAY BETTER. PLAY MORE </h4>
+        <br>
+    <div class="container">   
+        <h6 class="black-text center">AGCraft is building tomorrow’s guitars today. With the goal of superior sound and sustainable exotic tonewoods, we have
+         right guitar for you, at the right time in your musical journey. You will sound better, play better and play more. For 50 years,
+         we’ve been following your lead, designing trusted, quality instruments for a new era in our Bend, Oregon Custom Shop. Our passion matches yours, together we know what makes a great guitar. Four revolutionary body shapes, marrying science, art and beauty, cater to your individual style, offering personalized, signature tones you never thought possible; with unmatched ease of playability and striking fit and finish across all models. You will fall in love at first strum. That’s the Breedlove difference.</h6>
+    </div> 
+    
+    <br>
+    <br>
+ <!--end of about us-->
+
+<!--History main page-->
+
+<div class="container row">
+    <div class="col l12 s12 m12">
+        <h4 class="brown-text darken-5 bold center">AGCraft History</h4>
+            <p>In the 1960s, a Dr. Michael Kasha debunked a long-held belief that the modern guitar originated from these harp-like instruments developed by ancient cultures. Kasha (1920–2013) was a chemist, physicist, and teacher whose specialty was traveling the world and tracing the history of the guitar. Thanks to his research, we know the origins of what would eventually evolve into the guitar. A guitar is a musical instrument with a flat-backed rounded body that narrows in the middle, a long fretted neck, and usually six strings. It is European in origin: Moorish, to be specific, an offshoot of that culture's lute, or oud.</p>
+            <br>
+            <p>Finally, we have a specific name. The form of the modern classical guitar is credited to Spanish guitar maker Antonio Torres circa 1850. Torres increased the size of the guitar body, altered its proportions, and invented the "fan" top bracing pattern. Bracing, which refers to the internal pattern of wood reinforcements used to secure the guitar's top and back and prevent the instrument from collapsing under tension, is an important factor in how the guitar sounds. Torres' design greatly improved the volume, tone, and projection of the instrument, and it has remained essentially unchanged since.</p>
+    </div>
+</div>
+</div> <!--end of history-->
+
+<!--Our Team Carousel with image activator-->
+<div class="row">
+    <div class="s3 l12 m6">
+<h5 class="center white-text darken-5">The AGCraft Team</h5>
+</div>
+<div class="carousel lighten-4">
+    
+    <div class="carousel-item">
+        
+        <div id="card1" class="card">
+            <div id="cardimage1" class="card-image">
+                    <img id="crafter1" src="img/craftsman1.jpg" alt="" class="activator responsive-img">
+            </div>
+                <div id="cardcontent1" class="card-content">
+                    <span class="card-title activator white-text center">Victor Keeling</span>
+                </div>
+            <div class="card-reveal">
+                <span id="cardtitle1" class="card-title white-text  center">Victor Keeling<i class="material-icons right">close</i></span>
+                <p class="white-text">Just one of the famous figures who's played a Stradivarius: this 1696 viola belonged to him for a time. Nowadays, they are on loan to a number of famous violinists including Nicola Benedetti, David Garrett and Janine Jansen. Yo-Yo Ma, Julian Lloyd Webber and Steven Isserlis are among the lucky cellists who perform on Strads.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel-item">
+        <div id="card2" class="card">
+            <div id="cardimage2" class="card-image">
+                    <img id="crafter2" src="img/crafsman 2.jpg" alt="" class="activator responsive-img">
+            </div>
+                <div id="cardcontent2" class="card-content">
+                    <span id="cardtitle2" class="card-title activator white-text center">Krystal Dickinson</span>
+                </div>
+            <div class="card-reveal">
+                <span class="card-title white-text  center">Krystal Dickinson<i class="material-icons right">close</i></span>
+                <p class="white-text accent-5">Stradivari quickly made a name for himself as one of the most dextrous craftsmen in the world, thanks to the tiny ornate details on his instruments - notice how even the pegs holding the strings on this Viotti violin are beautifully carved. Crafted in 1709 and named after its owner Giovanni Battista Viotti, this violin now belongs to the Royal Academy of Music in London.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel-item">
+        <div class="card">
+            <div class="card-image large">
+                    <img id="crafter3" src="img/crafsman3.jpg" alt="" class="activator responsive-img">
+            </div>
+                <div class="card-content">
+                    <span class="card-title activator white-text center">Domingo Hartmann</span>
+                </div>
+            <div class="card-reveal">
+                <span class="card-title white-text  center">Domingo Hartmann<i class="material-icons right">close</i></span>
+                <p class="white-text">In the early 1690s, Stradivari tweaked his violin-making style once more, making the instruments slightly longer, and switched to using a darker, richer varnish, like the varnish used here on this Boissier-Sarasate violin. Named after its owner, this violin is one of two Stradivarius instruments which previously belonged to Spanish musician Pablo de Sarasate. Now it's housed in the Real Conservatorio Superior de Musica de Madrid.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel-item">
+        <div class="card">
+            <div class="card-image">
+                    <img id="crafter4" src="img/crafsman4.png" alt="" class="activator responsive-img">
+            </div>
+                <div class="card-content">
+                    <span class="card-title activator white-text center">Roosevelt Hills</span>
+                </div>
+            <div class="card-reveal">
+                <span class="card-title white-text  center">Roosevelt Hills<i class="material-icons right">close</i></span>
+                <p class="white-text">In around 1698, Stradivari reverted to his original ideas, and started creating slightly shorter instruments once again. This led to his so-called 'Golden Period', which lasted from 1700 - 1720. It's generally thought instruments from this time sound even better than his earlier models - this 1714 cello is one such example from the period.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel-item">
+        <div class="card">
+            <div class="card-image">
+                    <img id="crafter5" src="img/crafsman5.jpg" alt="" class="activator responsive-img">
+            </div>
+                <div class="card-content">
+                    <span class="card-title activator white-text center">Lowell Hermann II</span>
+                </div>
+            <div class="card-reveal">
+                <span class="card-title white-text text-darken-4 center">Lowell Hermann II<i class="material-icons right">close</i></span>
+                <p class="white-text">Only two examples of Stradivarius guitars exist, this one, known as the 'Hill' from 1688, and the 'Rawlins', created in 1700. This one is owned by the Ashmolean Museum, University of Oxford.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div> <!--end of the  team-->
+</div>
+</div>
+
+
+<div class="divider">
+
+</div> <!--cointainer team-->
+<div class="divider">
+
+</div> <!--cointainer team-->
+
+<div class="grandrepair">
+<div id="repairrelative" class="container white scrollspy">
+    <h4 class="brown-text darken-4 center"><b>Services and Repairs</b></h4>
+
+    <div class="container">
+    <div id="repairrow1" class="row">
+    <div class="col s6 m7 l7">
+        <h6>BRIDGE RE-GLUE GUITAR REPAIR</h6>
+        <p id="p1">A bridge reglue guitar repair is required when the bridge of an acoustic guitar has lifted off from the top of the guitar due to the glue failing under the string tension of the guitar. This is a common repair on classical or nylon-stringed guitars and on some steel-string guitars.
+        The best way to avoid this type of Guitar Repair on your acoustic guitar is to make sure your guitar is kept away from extreme temperatures as this can often affect the glue holding the bridge to the top of the guitar. For example, if your guitar is left in your car on a hot sunny day for an extended period of time, the glue underneath the bridge can fail due to high temperatures.
+        If this does happen to your guitar, our guitar repairer will be able to glue down the bridge again in most cases but as they say, prevention is always better than cure.</p>
+  </div>  
+    <div class= "col s6 m4 l4">
+        <img id="repair1" class="materialboxed responsive-img" data-caption="BRIDGE RE-GLUE GUITAR REPAIR" src="img/repair 1.jpg" alt="" width="200" height="230">
+    </div>
+</div>
+</div>
+
+<div class=" container">
+<div id="repairrow2" class="row">
+    <div class= "col s6 m4 l4">
+        <img id="repair2" class="materialboxed responsive-img" data-caption="CRACKLING INPUT-JACK GUITAR REPAIR" src="img/repair1.jpg" alt="" width="200" height="230">
+        </div>
+    <div class="col s6 m7 l7">
+        <h6>CRACKLING INPUT-JACK GUITAR REPAIR</h6>
+        <p id="p2">This type of Guitar Repair relates to electric guitars and electric/acoustic guitars and occurs when the input jack makes a crackling type of noise when the guitar is plugged in to an amplifier.
+            To identify a ‘crackling jack’ you can wiggle the guitar cable so that it moves inside the input jack. If you notice that the crackling sound gets worse when you do this, then it’s most commonly the input jack causing the issue.
+            To perform an input jack guitar repair, the guitar repairer will typically either clean the jack or replace the jack entirely to solve the problem.
+            This problem is often caused by corrosion and dirt inside of the input jack and can be prevented by keeping your guitar inside it’s case.</p>
+      </div>  
+    </div>
+</div>
+
+<div class="container">
+    <div id="repairrow3" class="row">
+        <div class="col s6 m7 l7">
+            <h6>FRET BUZZ GUITAR SERVICE</h6>
+            <p id="p3">One of the most common reasons guitarists bring in their axe to our guitar repair shop is due to fret buzz. This happens when the strings buzz on the frets creating an annoying buzzing sound.
+                The cause of fret buzz can be due to a few factors, most commonly it’s due to either the action (string height) being too low, the neck being bowed or uneven frets.
+                In the event of the action being too low, our guitar repairer would typically raise the action at the bridge of the guitar while also sighting the neck to make sure the neck is straight. 
+                In the event of a bowed neck, our guitar repairer will typically adjust the truss-rod, which is the long metal rod which sits underneath the fretboard, to straighten the neck.
+                In the event of uneven frets where some frets are higher than others, our guitar repairer will typically conduct a pro-setup guitar service which entails ‘dressing’ the tops of the frets with a flat file to make sure all of the frets are even again. The guitar repairer will then re-crown the frets individually and sand the frets before polishing them. This process is a lot more involved than a basic guitar service.
+                </p>
+      </div>  
+        <div class= "col s6 m4 l4">
+            <img id="repair3" class="materialboxed responsive-img" data-caption="FRET BUZZ GUITAR SERVICE" src="img/repair3.jpg" alt="" width="200" height="230">
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div id="repairrow4" class="row">
+        <div class= "col s6 m4 l4">
+            <img id="repair4" class="materialboxed responsive-img" data-caption="BROKEN NECK RE-GLUE GUITAR REPAIR" src="img/repair4.jpg" alt="" width="200" height="230">
+            </div>
+        <div class="col s6 m7 l7">
+            <h6>BROKEN NECK RE-GLUE GUITAR REPAIR </h6>
+            <p id="p4">This is one of those guitar repair jobs which just plain breaks your heart. With this type of guitar repair the neck will have typically been broken from a falling off a stand, being dropped by the guitarist (or roadie) or sometime during a flight from Sydney to LAX.
+                If a guitar takes a significant impact, the neck is the most common place to break due a few factors such as the weight of the body, string tension and the angle of the headstock. 
+                In this case, provided the neck has a relatively clean break, the reglue process is fairly straight forward for our guitar repairer. The guitar repairer will typically use a special kind of glue and custom clamps during the re-glue process to ensure the best outcome.
+                The process can become much more difficult if the neck has been reglued before and failed which is why it’s important to take your damaged guitar to a reputable guitar repair shop.</p>
+          </div>  
+        </div>
+</div>
+
+<div class="container">
+        <div id="repairrow5"  class="row">
+            <div class="col s6 m7 l7">
+                <h6>RE-FRET GUITAR REPAIR</h6>
+                <p id="p5">Fret wear often occurs when a guitar has been played extensively and is more common on older instruments or on guitars who belong to professional guitarists.
+                    Due to the extensive use, the frets often ware on certain points on the fretboard, typically where the 1st, 2nd and 3rd strings reside and on the 1st, 2nd and 3rd frets where the majority of playing takes place.
+                    In this case, there are two main methods to fixing extreme fret wear. 
+                    The first is to conduct a pro-setup guitar service which we mentioned in the fret-buzz service stage. In this case the guitar repairer ‘dresses’ the tops of the frets with a flat file to remove any fret-ware. The guitar repairer will then typically re-crown the frets again afterwards.
+                    In more extreme cases it is necessary to conduct a re-fret where the guitar repairer will remove all of the frets from the fretboard and replace them with new frets. This type of guitar repair is quite involved and only the most experienced luthiers can do this sort of work.
+                </p>
+          </div>  
+            <div class= "col s6 m4 l4">
+                <img id="repair5" class="materialboxed responsive-img" data-caption="RE-FRET GUITAR REPAIR" src="img/repair5.jpg" alt="" width="200" height="230">
+            </div>
+        </div>
+</div>
+
+
+</div> <!--container end services-->
+</div>
+<div class="divider"></div>
+
+
+<!--gallery guitar-->
+<h3 class="white-text center">Gallery</h3>
+<div id="gallery" class="gallery scrollspy">
+    
+    <div class="row">
+            <img id="galpic1" class="responsive-img materialboxed col s12 l2 m12"  src="img/gallery1.jpg" alt="">
+            <img id="galpic2" class="responsive-img materialboxed col s12 l3 m12"  src="img/gallery2.jpg" alt="">
+            <img id="galpic3" class="responsive-img materialboxed col s12 l2 m12"  src="img/gallery3.jpg" alt="">
+            <img id="galpic4" class="responsive-img materialboxed col s12 l3 m12"  src="img/gallery5.jpg" alt="">
+             <img id="galpic5" class="responsive-img materialboxed col s12 l2 m12" src="img/gallery6.jpg" alt="">   
+    </div><!--end col-->
+
+    <div class="row">
+
+        <img id="galpic6" class="responsive-img materialboxed col s3 l2"  src="img/gallery12.jpg" alt="">
+        <img id="galpic7" class="responsive-img materialboxed col s12 l3 m12"  src="img/gallery8.jpg" alt="">
+        <img id="galpic8" class="responsive-img materialboxed col s12 l2 m12"  src="img/gallery9.jpg" alt="">
+        <img id="galpic9" class="responsive-img materialboxed col s12 l3 m12"  src="img/gallery10.jpg" alt="">
+        <img id="galpic10" class="responsive-img materialboxed col s12 l2 m12" src="img/gallery11.jpg" alt="">    
+    </div> <!--end row-->
+</div>
+       
+
+
+
+<!--footer-->
+<footer class="page-footer  green accent-2 brown-text" height="200">
+    <div class="container">
+      <div class="row">
+        <div class="col l4 s12">
+          <h5 class="brown-text">Contact Us</h5>
+          <p class="brown-text">57890 Daniel Creek Apt. 183 Jamaica</p>
+          <p>496-847-2593 x1922</p>
+          <p>pohomex589@silbarts.com</p>
+        </div>
+        <div class="col l6 offset-l2 s12">
+          <h5 class="brown-text">Follow Us</h5>
+          <a href="#"><span class="iconify" data-icon="mdi:facebook" data-width="30" data-height="30"></span></a>
+          <a href="#"><span class="iconify" data-icon="logos:twitter" data-width="30" data-height="30"></span></a>
+          <a href="#"><span class="iconify" data-icon="logos:youtube-icon" data-width="30" data-height="30"></span></a>
+        </div>
+      </div>
+    </div>
+
+</footer> <!--End Of footer-->
+    <div class="footer-copyright white">
+      
+      &copy; 2021 Copyright AGcraft 
+      
+</div>
+
+
+
+
+
+    
+  
+
+
+  <div class="fixed-action-btn">
+    <button class="btn-floating btn-large green accent-2 pulse" onclick="openChat()">
+      <i class="large material-icons">chat</i>
+
+      
+</button>
+  
+
+
+
+
+
+
+
+
+    <!---JQueryCDN--->
+    <script src=" https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+    <script>
+//sidenav
+    $(document).ready(function(){
+    $('.sidenav').sidenav();
+    
+//dropdown
+    $(".dropdown-trigger").dropdown( {
+            'hover': true,
+            'constrainWidth': false
+        });
+    //slider
+    $('.slider').slider({
+        'height': 550, 'duration': 300, 'interval': 3000 });
+        
+    $('.parallax').parallax();
+    
+    $('input#input_text, textarea#textarea2').characterCounter();
+
+  
+    $('.carousel').carousel({
+    'dist': -30});
+
+    $('.scrollspy').scrollSpy({'throttle': 1, 'scrollOffset': 50});
+    
+    $('.fixed-action-btn').floatingActionButton({
+        'hoverEnabled':false
+    });
+    
+    $('.modal').modal({'inDuration': 700, 'outDuration': 500});
+    
+    $('#arrowside').collapsible();
+      		
+         
+    $('.collapsible').collapsible();
+    $('.materialboxed').materialbox({'inDuration': 400});
+    });
+
+</script>
+
+</body>
+</html>

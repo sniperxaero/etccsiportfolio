@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Glory:ital,wght@0,100;0,200;1,100&family=Lacquer&family=Miltonian+Tattoo&family=Sofadi+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Glory:ital,wght@0,100;0,200;1,100&family=Lacquer&family=Miltonian+Tattoo&family=Raleway&family=Sofadi+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Glory:ital,wght@0,100;0,200;1,100&family=Grandstander&family=Lacquer&family=Miltonian+Tattoo&family=Raleway&family=Sofadi+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link rel="stylesheet" href="sign.css">
+    
+    <title>Sign in</title>
+</head>
+
+
+<body>
+    
+<div id="contain" class="container">
+    <div id="signinform" class="container">
+        <h4 class="white-text center">Get Started with AGcraft</h4>
+        <h5 class="white-text center">Create your account</h5>
+    <div class="row center">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <input  id="first_name" type="text" class="validate">
+              <label for="first_name">enter a name</label>
+            </div>
+          </div>
+          <div class="row center">
+            <div class="input-field col s12">
+              <input   type="email" class="validate">
+              <label for="email">please enter your email</label>
+            </div>
+          </div>
+
+          <div class="row center">
+            <div class="input-field col s12 center">
+              <input placeholder="please pick strong password" id="password" type="text" class="validate">
+              <label class="center"  for="password">enter password</label>
+            </div>
+          </div>
+          
+            <div class="row center">
+            <div class="input-field col s12">
+              <input id="password" type="text" class="validate">
+              <label for="password">retype password</label>
+            </div>
+            </div>
+
+            <p>
+                <label>
+                  <input type="checkbox">
+                  <span>I agree to AGcraft <a href="#!">Term and Service</a></span>
+                </label>
+              </p>
+        <div class="row center">
+          <div class="col s12">
+              <button class="btn waves-effect waves-light center green accent-2">create my free account</button>
+          </div>
+        </div>
+
+        <div class="row center">
+            <div class="col s12">
+                <span>or login with <a href="#!">Google account</a> and <a href="#!">Facebook</a></span>
+            </div>
+          </div>
+
+
+          <br>
+
+
+            <div>
+              <button class="btn wave-effect wave-light green accent-2"><a class="white-text" href="home.html">back to home</a><i class="material-icons left">fast_rewind</i></button>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+</div>
+
+
+ <!---JQueryCDN--->
+ <script src=" https://code.jquery.com/jquery-3.6.0.min.js"
+ integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+ </script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+<script>
+//sidenav
+$(document).ready(function(){
+$('.sidenav').sidenav();
+
+//dropdown
+$(".dropdown-trigger").dropdown( {
+     'hover': true,
+     'constrainWidth': false
+ });
+//slider
+$('.slider').slider({
+ 'height': 550, 'duration': 300, 'interval': 3000 });
+$('.parallax').parallax();
+$('input#input_text, textarea#textarea2').characterCounter();
+$('.datepicker').datepicker({'autoClose': false, 'parse':false});
+$('.carousel').carousel({
+'dist': -30});
+$('.scrollspy').scrollSpy({'throttle': 1, 'scrollOffset': 50});
+$('.fixed-action-btn').floatingActionButton({
+ 'hoverEnabled':false
+});
+$('.modal').modal({'inDuration': 700, 'outDuration': 500});
+$('#arrowside').collapsible();
+$('.collapsible').collapsible();
+$('.materialboxed').materialbox({'inDuration': 400});
+});
+
+</script>
+</body>
+</html>

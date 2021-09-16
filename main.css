@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Glory:ital,wght@0,100;0,200;1,100&family=Lacquer&family=Miltonian+Tattoo&family=Sofadi+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Glory:ital,wght@0,100;0,200;1,100&family=Lacquer&family=Miltonian+Tattoo&family=Raleway&family=Sofadi+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Glory:ital,wght@0,100;0,200;1,100&family=Grandstander&family=Lacquer&family=Miltonian+Tattoo&family=Raleway&family=Sofadi+One&display=swap');
+
+
+#galpic1, #galpic8 {
+    transform: rotate(-10deg);
+}
+
+#galpic3, #galpic6 , #galpic10 {
+    transform: rotate(10deg);
+}
+
+#galpic5  {
+    transform: rotate(-10deg);
+}
+
+#galpic2, #galpic4, #galpic7 , #galpic9 {
+    height: 300px;
+    width: 220px;
+    transform: rotate(-3deg);
+}
+
+
+#gallery {
+    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-left: 130px;
+    padding-right: 0px;
+}
+
+.materialboxed {
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+    box-shadow: rgba(124, 80, 39, 0.171) 6px 2px 16px 0px, rgba(70, 67, 55, 0.8) -6px -2px 16px 0px;
+    
+}
+
+.grandrepair {
+   margin-top:  10px;
+   margin-bottom: 20px;
+}
+
+#repairrow1, #repairrow2, #repairrow3, #repairrow4, #repairrow5 {
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    
+}
+
+
+
+
+#repairrelative {
+    padding-bottom: 5px;
+    padding-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+   
+}
+
+#repair1, #repair2, #repair3, #repair4, #repair5 {
+    margin-top: 50px;
+}
+
+#p1, #p2, #p3, #p4, #p5 {
+    font-size: 12px;
+
+}
+
+#modallogin {
+width: 300px;
+height: 600px;
+
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Grandstander', cursive;
+    font-weight: 300;
+    padding: 0;
+    background-color: #363c3d;
+    background-image: linear-gradient(315deg, #2d3436 0%, #1f1b1b 50%);
+
+}
+
+#crafter1, #crafter2, #crafter3, #crafter4, #crafter5 {
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+}
+
+.card-reveal, .sidenav, .collapsible-body, #artistdrop {
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #1b1b1b 30%);
+}
+
+.sidenav {
+    width: 170px;
+    
+}
+
+.card .card-image img {
+    display: block;
+    
+    border-radius: 2px 2px 0 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    height: 238px;
+}
+
+.card, .card-content {
+    border-top-left-radius: 35px;
+    background-color: #2d3436;
+background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+}
+
+.carousel {
+    
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 50%px;
+    -webkit-perspective: 500px;
+    perspective: 500px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+
+
+
+.carousel .carousel-item {
+    visibility: hidden;
+    width: 300px;
+    height: 20%;
+    position: absolute;
+    top: -100px;
+    left: 0px;
+}
+
+.card .card-content .card-title {
+    display: block;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+
+.card .card-content {
+    padding: 5px;
+    border-radius: 0 0 2px 2px;
+}
+
+
+.slider .indicators .indicator-item.active {
+    background-color: #ffffff;
+}
+
+
+.slider .indicators .indicator-item {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    margin: 0px 12px;
+    background-color: #4e342e;
+    transition: background-color 0.3s ease 0s;
+    border-radius: 50%;
+}
+
+#loginbutton {
+    border-radius: 8%;
+    
+}
+
+.modal {
+    overflow-y: hidden;
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: #fff;
+    margin: 0;
+    border-radius: 8px;
+    display: none;
+    height: 233px;
+    min-width: 220px;
+    overflow-y: auto;
+    opacity: 0;
+    position: absolute;
+    left: 50px;
+    top:-50px;
+    z-index: 1000;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+#slider1{
+
+    opacity: 0.8;
+}
+
+#sliderwarp {
+    
+    margin-right: 200px;
+   
+}
+
+.parallax-container {
+    height: 90vh;
+  }
+
+  #slidebanner {
+      margin-top: 7px;
+  }
+
+ #mayersbanner {
+      
+     margin-top: 210px;
+      
+  }
+
+  #mayersyt {
+      border-radius: 8px;
+  }
+

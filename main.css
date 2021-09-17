@@ -229,7 +229,7 @@ background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
 }
 
 .parallax-container {
-    height: 90vh;
+    height: 50vh;
   }
 
   #slidebanner {
@@ -238,7 +238,7 @@ background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
 
  #mayersbanner {
       
-     margin-top: 210px;
+     margin-top:100px;
       
   }
 
